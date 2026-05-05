@@ -1,0 +1,146 @@
+/* ============================================================
+   Australian Animals — Child-Friendly Global Style Overrides
+   Applied on top of @slidev/theme-shibainu
+   ============================================================ */
+
+:root {
+  --color-outback-red:   #FF6B6B;
+  --color-gum-green:     #6BCB77;
+  --color-wattle-yellow: #FFE66D;
+  --color-sky-teal:      #4ECDC4;
+  --color-sand:          #fdf8f3;
+  --color-dark-bark:     #402312;
+  --color-eucalyptus:    #95E1D3;
+}
+
+/* Light background for all slides */
+.slidev-layout {
+  background-color: var(--color-sand) !important;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Warm gradient for cover & section slides */
+.slidev-layout.cover,
+.slidev-layout.section {
+  background: linear-gradient(135deg, #fff7ed 0%, #fef9e7 50%, #f0fdf4 100%) !important;
+}
+
+/* Typography — child-friendly sizing and weight */
+.slidev-layout h1 {
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 1.15;
+  color: var(--color-dark-bark);
+}
+
+.slidev-layout h2 {
+  font-weight: 800;
+  font-size: 2rem;
+  color: var(--color-dark-bark);
+}
+
+.slidev-layout h3 {
+  font-weight: 700;
+  font-size: 1.35rem;
+  text-transform: none;
+  letter-spacing: normal;
+  opacity: 1 !important;
+  color: var(--color-dark-bark);
+}
+
+.slidev-layout p,
+.slidev-layout li {
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.slidev-layout ul li {
+  margin-bottom: 0.3rem;
+}
+
+.slidev-layout ul li::marker {
+  font-size: 1.1em;
+}
+
+/* Blockquote — warm accent style */
+.slidev-layout blockquote {
+  border-left: 5px solid var(--color-outback-red);
+  background: rgba(255, 107, 107, 0.08);
+  border-radius: 0 12px 12px 0;
+  padding: 0.75rem 1.25rem;
+  margin: 1rem 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* Table — child-friendly alternating rows */
+.slidev-layout table {
+  font-size: 1rem;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.slidev-layout th {
+  background: var(--color-dark-bark);
+  color: #fff;
+  padding: 0.6rem 1rem;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.slidev-layout td {
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid #ede8e2;
+  font-weight: 600;
+}
+
+.slidev-layout tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.slidev-layout tr:nth-child(odd) td {
+  background: rgba(255, 248, 235, 0.6);
+}
+
+/* Slide-in animation for content */
+@keyframes slide-up-in {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.slidev-layout > * {
+  animation: slide-up-in 0.35s ease-out both;
+}
+
+/* Don't re-animate already-rendered slides */
+.slidev-page-frozen .slidev-layout > * {
+  animation: none;
+}
+
+/* Cover slide heading */
+.slidev-layout.cover h1 {
+  font-size: 3.8rem;
+  text-shadow: 2px 3px 0 rgba(255, 255, 255, 0.55);
+}
+
+.slidev-layout.cover p {
+  font-size: 1.4rem;
+  color: #5d4037;
+  font-weight: 700;
+}
+
+/* Quote layout */
+.slidev-layout.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.slidev-layout.quote h1 {
+  font-size: 2.8rem;
+}
