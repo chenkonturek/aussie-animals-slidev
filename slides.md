@@ -16,29 +16,98 @@ aspectRatio: "16/9"
 <div class="text-center mt-6 text-6xl tracking-widest">🦘 🐨 🦔 🐾 🦫 🐦</div>
 
 ---
-layout: default
+layout: none
 ---
 
-# Australia is Special! 🌏
+<div class="spl-slide">
 
-<div class="grid grid-cols-2 gap-6 items-stretch" style="height:82%">
-<div class="flex flex-col justify-center gap-2 text-lg">
+  <div class="spl-left">
+    <h1 class="spl-title">Australia is Special! 🌏</h1>
+    <p class="spl-intro">
+      The world's only country that's also a <strong>continent</strong>.
+      Millions of years of ocean isolation created animals found
+      <strong>nowhere else on Earth.</strong>
+    </p>
+    <div class="spl-chips">
+      <div class="spl-chip" style="background:#FF8FA3">
+        <span class="spl-chip-emoji">🦘</span>
+        <div><strong>Marsupials</strong><small>Babies in pouches</small></div>
+      </div>
+      <div class="spl-chip" style="background:#FFD93D">
+        <span class="spl-chip-emoji">🦔</span>
+        <div><strong>Monotremes</strong><small>Egg-laying mammals</small></div>
+      </div>
+      <div class="spl-chip" style="background:#95E1D3">
+        <span class="spl-chip-emoji">🐊</span>
+        <div><strong>Reptiles</strong><small>World's most fearsome</small></div>
+      </div>
+      <div class="spl-chip" style="background:#B8F5C8">
+        <span class="spl-chip-emoji">🐦</span>
+        <div><strong>Unique Birds</strong><small>Extraordinary talents</small></div>
+      </div>
+    </div>
+  </div>
 
-Australia is both a **continent** and a **country!**
-
-Surrounded by ocean, its animals have been **cut off from the world for millions of years** — that's why it has creatures found **NOWHERE else on Earth!**
-
-🦘 **Marsupials** — carry babies in pouches
-
-🦔 **Monotremes** — lay eggs but are mammals
-
-🐊 **Reptiles** — some of the world's most fearsome
-
-🐦 **Birds** — with very unusual talents
+  <div class="spl-right">
+    <AustraliaMap />
+  </div>
 
 </div>
-<AustraliaMap />
-</div>
+
+<style>
+.spl-slide {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: 'Nunito', sans-serif;
+}
+.spl-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 2.5rem 3rem 3.5rem;
+  background: linear-gradient(155deg, #fff8f0 0%, #fef0d8 100%);
+  gap: 1.4rem;
+}
+.spl-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #402312;
+  line-height: 1.2;
+  margin: 0;
+}
+.spl-intro {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+  margin: 0;
+}
+.spl-intro strong { color: #402312; }
+.spl-chips {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+.spl-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  border-radius: 16px;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+.spl-chip-emoji { font-size: 1.8rem; flex-shrink: 0; line-height: 1; }
+.spl-chip strong { display: block; font-size: 0.88rem; font-weight: 900; color: #222; }
+.spl-chip small  { display: block; font-size: 0.72rem; font-weight: 600; opacity: 0.7; margin-top: 1px; }
+.spl-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem;
+  background: linear-gradient(155deg, #c5e8f5 0%, #90cbe8 100%);
+}
+</style>
 
 ---
 layout: section
