@@ -34,5 +34,10 @@ This is a [Slidev](https://sli.dev) presentation — a Vue-powered slide deck de
 - `AnimalCard.vue` — 3D CSS flip card. Front shows emoji + name + type; back shows fact + habitat. Uses `-webkit-` prefixes for Safari compatibility. Toggle state is `isFlipped = ref(false)`.
 - `AnimalQuiz.vue` — self-contained multi-choice quiz. Accepts a `questions` array (each item: `{ question, options[], correct, explanation }`). Tracks `currentIndex`, `score`, and `isComplete` internally. Uses `<Transition name="slide-fade">` between questions and `<Transition name="fade">` for the explanation panel.
 - `FunFact.vue` — stateless bounce-in card (pure CSS `@keyframes bounce-in`). Props: `emoji`, `fact`, `color`.
+- `AustraliaMap.vue` — pure inline SVG map of Australia (520×450 viewBox). No props. Renders the continent outline, Tasmania, ocean labels, and animal emoji markers (🐊 north, 🦘 outback, 🐨 east coast, 🦈 Pacific). Width-driven sizing (`width: 100%; height: auto`) — size it by constraining the parent container.
+
+**Slide-scoped styles:** Add a `<style>` block at the end of a slide's markdown content for styles that apply only to that slide. Class names must be unique across slides as these styles are **not** automatically scoped (unlike Vue SFC `<style scoped>`). Prefix with a slide-specific namespace (e.g. `.spl-` for the Australia is Special slide) to avoid collisions.
+
+**Full-bleed slides:** Use `layout: none` to bypass all theme padding and layout wrappers. Place content in a `div` with `position: absolute; inset: 0` (or UnoCSS `absolute inset-0`) to fill the full slide area. Used on slide 2 (Australia is Special) for the two-panel design.
 
 **Passing data to components in slides:** Define variables in a per-slide `<script setup>` block placed after the slide content in `slides.md`. Each slide is compiled as its own Vue SFC, so variables do not leak between slides.

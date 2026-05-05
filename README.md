@@ -26,6 +26,7 @@ npm run dev      # opens http://localhost:3030
 | **AnimalCard** | 3D flip card — click to reveal a fun fact |
 | **AnimalQuiz** | Step-through quiz with instant right/wrong feedback |
 | **FunFact** | Bounce-in fact banner |
+| **AustraliaMap** | Inline SVG map with animal emoji markers and ocean labels |
 
 ## Build & Export
 
