@@ -2,6 +2,8 @@
 
 A child-friendly interactive slide deck built with [Slidev](https://sli.dev), featuring clickable animal cards, fun fact banners, and a multiple-choice quiz.
 
+**Live:** https://chenkonturek.github.io/aussie-animals-slidev/
+
 ## Getting Started
 
 ```bash
@@ -28,9 +30,13 @@ npm run dev      # opens http://localhost:3030
 ## Build & Export
 
 ```bash
-npm run build    # static site → dist/
+npm run build    # static site → dist/ (includes --base flag for GitHub Pages)
 npm run export   # PDF export (requires: npx playwright install chromium)
 ```
+
+## Deployment
+
+Pushing to `main` automatically builds and deploys to GitHub Pages via `.github/workflows/deploy.yml`. The build uses `--base /aussie-animals-slidev/` so assets resolve correctly under the repo sub-path.
 
 ## Tech
 

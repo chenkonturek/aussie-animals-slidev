@@ -6,11 +6,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ```bash
 npm run dev      # start dev server at http://localhost:3030 (hot reload)
-npm run build    # build static output to dist/
+npm run build    # build static output to dist/ (includes --base /aussie-animals-slidev/ for GitHub Pages)
 npm run export   # export to PDF (requires Playwright — run `npx playwright install chromium` first)
 ```
 
 There are no tests or linters configured.
+
+## Deployment
+
+Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds and deploys to GitHub Pages automatically. Live URL: https://chenkonturek.github.io/aussie-animals-slidev/
+
+The `--base /aussie-animals-slidev/` flag in the build script is required — removing it breaks asset paths on GitHub Pages. For local builds (`dist/`) served from a root path, this flag causes asset 404s; serve locally with `npx serve dist` or use `npm run dev` instead.
 
 ## Architecture
 
