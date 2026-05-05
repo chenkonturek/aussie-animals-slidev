@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="cc-bg" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5A574"/>
+      <stop offset="1" stop-color="#C4501E"/>
+    </linearGradient>
+    <filter id="cc-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#00000033"/>
+    </filter>
+  </defs>
+  <!-- App icon rounded square -->
+  <rect width="120" height="120" rx="26" fill="url(#cc-bg)" filter="url(#cc-shadow)"/>
+  <!-- Terminal chevron > -->
+  <path d="M24 42L50 60L24 78"
+        stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Cursor underscore _ -->
+  <rect x="58" y="71" width="38" height="10" rx="5" fill="white"/>
+</svg>

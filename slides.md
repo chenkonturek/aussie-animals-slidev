@@ -307,3 +307,88 @@ layout: center
 <div class="text-5xl mt-5 tracking-widest">🦘 🐨 🦔 🐾 🦫 🐦</div>
 
 <div class="mt-5 text-xl font-bold opacity-70">Remember: Every animal is special and worth protecting! 💚</div>
+
+---
+layout: none
+---
+
+<div class="cc-slide">
+
+  <img src="/claude-code-logo.png" class="cc-logo" alt="Claude Code logo" />
+  <h1 class="cc-title">Meet Claude Code! 🪄</h1>
+  <p class="cc-sub">Type what you want — AI builds it for you!</p>
+
+  <div class="cc-reveal">
+    <span class="cc-reveal-emoji">🤫</span>
+    <span>This <strong>whole slideshow</strong> was made with Claude Code! 🦘🐨🦔</span>
+  </div>
+
+  <div class="cc-chips">
+    <div class="cc-chip" style="background:#FFE66D">💬<strong>You talk</strong></div>
+    <div class="cc-chip" style="background:#95E1D3">🤖<strong>AI codes</strong></div>
+    <div class="cc-chip" style="background:#FF8FA3">🎉<strong>Ta-da!</strong></div>
+  </div>
+
+</div>
+
+<style>
+.cc-slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+  padding: 2.5rem 3.5rem;
+  background: linear-gradient(145deg, #fff7ed 0%, #fef9e7 55%, #f0fdf4 100%);
+  font-family: 'Nunito', sans-serif;
+}
+.cc-logo {
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+  margin-bottom: 0.1rem;
+}
+.cc-title {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--color-dark-bark);
+  margin: 0;
+}
+.cc-sub {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0;
+}
+.cc-reveal {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  background: var(--color-wattle-yellow);
+  border-radius: 18px;
+  padding: 0.85rem 1.6rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.10);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #402312;
+  max-width: 600px;
+  width: 100%;
+}
+.cc-reveal-emoji { font-size: 1.8rem; flex-shrink: 0; }
+.cc-chips {
+  display: flex;
+  gap: 0.9rem;
+}
+.cc-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 14px;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 900;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  color: #222;
+}
+</style>
