@@ -93,14 +93,16 @@
 
 <style scoped>
 .aus-map-wrap {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .aus-map-wrap svg {
-  width: 100%;
-  height: auto;
+  height: 100%;
+  width: auto;
+  max-height: 320px;
   filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.18));
   border-radius: 18px;
 }

@@ -21,22 +21,20 @@ layout: default
 
 # Australia is Special! 🌏
 
-<div class="grid grid-cols-2 gap-8 mt-3 items-center">
-<div class="flex flex-col gap-3">
+<div class="grid grid-cols-2 gap-6 items-stretch" style="height:82%">
+<div class="flex flex-col justify-center gap-2 text-lg">
 
 Australia is both a **continent** and a **country!**
 
-Surrounded by ocean, its animals have been **cut off from the world for millions of years**
+Surrounded by ocean, its animals have been **cut off from the world for millions of years** — that's why it has creatures found **NOWHERE else on Earth!**
 
-That's why it has creatures found **NOWHERE else on Earth!**
+🦘 **Marsupials** — carry babies in pouches
 
-🦘 **Marsupials** — carry babies in pouches!
+🦔 **Monotremes** — lay eggs but are mammals
 
-🦔 **Monotremes** — lay eggs but are mammals!
+🐊 **Reptiles** — some of the world's most fearsome
 
-🐊 **Reptiles** — some of the world's most fearsome!
-
-🐦 **Birds** — with very unusual talents!
+🐦 **Birds** — with very unusual talents
 
 </div>
 <AustraliaMap />
